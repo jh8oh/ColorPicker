@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="colorpicker_red">#F44336</color>
+    <color name="colorpicker_pink">#E91E63</color>
+    <color name="colorpicker_purple">#9C27B0</color>
+    <color name="colorpicker_deep_purple">#673AB7</color>
+    <color name="colorpicker_indigo">#3F51B5</color>
+    <color name="colorpicker_blue">#2196F3</color>
+    <color name="colorpicker_light_blue">#03A9F4</color>
+    <color name="colorpicker_cyan">#00BCD4</color>
+    <color name="colorpicker_teal">#009688</color>
+    <color name="colorpicker_green">#4CAF50</color>
+    <color name="colorpicker_light_green">#8BC34A</color>
+    <color name="colorpicker_lime">#CDDC39</color>
+    <color name="colorpicker_yellow">#FFEB3B</color>
+    <color name="colorpicker_amber">#FFC107</color>
+    <color name="colorpicker_orange">#FF9800</color>
+    <color name="colorpicker_deep_orange">#FF5722</color>
+    <color name="colorpicker_brown">#795548</color>
+    <color name="colorpicker_grey">#9E9E9E</color>
+    <color name="colorpicker_blue_grey">#607D8B</color>
+
+    <integer-array name="colors">
+        <item>@color/colorpicker_red</item>
+        <item>@color/colorpicker_pink</item>
+        <item>@color/colorpicker_purple</item>
+        <item>@color/colorpicker_deep_purple</item>
+        <item>@color/colorpicker_indigo</item>
+        <item>@color/colorpicker_blue</item>
+        <item>@color/colorpicker_light_blue</item>
+        <item>@color/colorpicker_cyan</item>
+        <item>@color/colorpicker_teal</item>
+        <item>@color/colorpicker_green</item>
+        <item>@color/colorpicker_light_green</item>
+        <item>@color/colorpicker_lime</item>
+        <item>@color/colorpicker_yellow</item>
+        <item>@color/colorpicker_amber</item>
+        <item>@color/colorpicker_orange</item>
+        <item>@color/colorpicker_deep_orange</item>
+        <item>@color/colorpicker_brown</item>
+        <item>@color/colorpicker_grey</item>
+        <item>@color/colorpicker_blue_grey</item>
+    </integer-array>
+</resources>
