@@ -1,6 +1,12 @@
 # ColorPicker
 A color picker module for Android
 
+## Download
+Gradle implemetation
+```gradle
+implementation 'com.jh8oh:colorpicker:1.0.0'
+```
+
 ## Methods
 
 ```kotlin
