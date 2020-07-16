@@ -1,4 +1,4 @@
-# ColorPicker
+# colorpicker
 A color picker module for Android
 
 ## Download
