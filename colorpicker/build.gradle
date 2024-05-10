@@ -1,6 +1,7 @@
 plugins{
     id 'com.android.library'
     id 'kotlin-android'
+    id 'maven-publish'
 }
 
 android {
@@ -33,4 +34,32 @@ dependencies {
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+}
+
+afterEvaluate {
+    publishing {
+        repositories {
+            maven {
+                name = "GitHubPackages"
+                url = uri("https://maven.pkg.github.com/jh8oh/colorpicker")
+                credentials {
+                    Properties properties = new Properties()
+                    File propertiesFile = new File('local.properties')
+                    propertiesFile.withInputStream {
+                        properties.load(it)
+                    }
+
+                    username = properties.getProperty("gpr.user")
+                    password = properties.getProperty("gpr.key")
+                }
+            }
+        }
+        publications {
+            register("release", MavenPublication) {
+                groupId = "dev.ohjiho"
+                artifactId = "colorpicker"
+                version = "1.0.1"
+            }
+        }
+    }
 }
