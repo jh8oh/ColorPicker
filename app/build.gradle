@@ -4,7 +4,7 @@ plugins{
 }
 
 android {
-    namespace "com.jh8oh.colorpickerdemo"
+    namespace "dev.ohjiho.colorpickerdemo"
     compileSdk 34
     defaultConfig {
         minSdkVersion 22

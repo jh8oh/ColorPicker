@@ -1,8 +1,13 @@
-package com.jh8oh.colorpicker
+package dev.ohjiho.colorpicker
 
 import android.content.Context
 import android.view.Gravity
-import android.widget.*
+import android.widget.FrameLayout
+import android.widget.ImageButton
+import android.widget.ImageView
+import android.widget.TableLayout
+import android.widget.TableRow
+import com.jh8oh.colorpicker.R
 
 class ColorPicker(private val context: Context, private val listener: Listener) {
 

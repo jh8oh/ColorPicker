@@ -1,4 +1,4 @@
-package com.jh8oh.colorpickerdemo
+package dev.ohjiho.colorpickerdemo
 
 import org.junit.Assert.assertEquals
 import org.junit.Test

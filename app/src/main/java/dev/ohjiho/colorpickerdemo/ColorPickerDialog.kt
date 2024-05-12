@@ -1,4 +1,4 @@
-package com.jh8oh.colorpickerdemo
+package dev.ohjiho.colorpickerdemo
 
 import android.app.AlertDialog
 import android.app.Dialog
@@ -6,7 +6,8 @@ import android.content.Context
 import android.os.Bundle
 import android.util.Log
 import androidx.fragment.app.DialogFragment
-import com.jh8oh.colorpicker.ColorPicker
+import com.jh8oh.colorpickerdemo.R
+import dev.ohjiho.colorpicker.ColorPicker
 
 class ColorPickerDialog : DialogFragment(), ColorPicker.Listener {
 
