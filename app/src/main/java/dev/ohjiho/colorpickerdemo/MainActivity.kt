@@ -3,7 +3,6 @@ package dev.ohjiho.colorpickerdemo
 import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
-import com.jh8oh.colorpickerdemo.R
 
 class MainActivity : AppCompatActivity(), ColorPickerDialog.Listener {
 

@@ -7,7 +7,6 @@ import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.TableLayout
 import android.widget.TableRow
-import com.jh8oh.colorpicker.R
 
 class ColorPicker(private val context: Context, private val listener: Listener) {
 
@@ -106,17 +105,20 @@ class ColorPicker(private val context: Context, private val listener: Listener) 
     }
 
     /** Sets the number of columns per row to [amount] */
-    fun setColumnAmount(amount: Int) {
+    fun setColumnAmount(amount: Int): ColorPicker {
         colAmount = amount
+        return this
     }
 
     /** Sets the list of colors to be displayed using [resID], the ID of an array resource containing ColorInts */
-    fun setColors(resID: Int) {
+    fun setColors(resID: Int): ColorPicker {
         colorIntList = context.resources.getIntArray(resID).toList()
+        return this
     }
 
     /** Sets the list of colors to be displayed using [colorInts], a variable argument of ColorInts */
-    fun setColors(vararg colorInts: Int) {
+    fun setColors(vararg colorInts: Int): ColorPicker {
         colorIntList = colorInts.toList()
+        return this
     }
 }

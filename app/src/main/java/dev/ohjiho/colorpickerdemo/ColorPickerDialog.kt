@@ -6,7 +6,6 @@ import android.content.Context
 import android.os.Bundle
 import android.util.Log
 import androidx.fragment.app.DialogFragment
-import com.jh8oh.colorpickerdemo.R
 import dev.ohjiho.colorpicker.ColorPicker
 
 class ColorPickerDialog : DialogFragment(), ColorPicker.Listener {
@@ -34,9 +33,10 @@ class ColorPickerDialog : DialogFragment(), ColorPicker.Listener {
         return activity?.let {
             AlertDialog.Builder(it).apply {
                 setTitle(R.string.dialog_title)
-                setView(ColorPicker(context, this@ColorPickerDialog).apply {
-                    setColors(R.array.colors)
-                }.createView())
+                setView(
+                    ColorPicker(context, this@ColorPickerDialog).setColors(R.array.colors)
+                        .createView()
+                )
                 setNegativeButton(R.string.dialog_cancel) { dialog, _ ->
                     dialog.cancel()
                 }
